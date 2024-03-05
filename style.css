@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('https://i.postimg.cc/50kYPw44/bg1.png');
+    background-size: cover;
+}
+
+/* Header Styles */
+.qq1 {
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.pp1,
+.pp2 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.qq2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button1,
+.nn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    width: 200px; /* Adjust button width */
+    text-align: center;
+}
+
+/* Popup Styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 80%;
+    margin: 100px auto;
+}
+
+.buttons button {
+    margin: 10px;
+}
+
+/* Page Quiz Styles */
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#questionContainer {
+    margin-top: 20px;
+}
+
+#optionsContainer {
+    text-align: left;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    outline: none;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-image: url('https://i.postimg.cc/50kYPw44/bg1.png');
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0px;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: royalblue;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .qq1 {
+        font-size: 20px;
+    }
+    .pp1,
+    .pp2 {
+        font-size: 14px;
+    }
+    .button1,
+    .nn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+

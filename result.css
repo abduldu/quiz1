@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.postimg.cc/50kYPw44/bg1.png');
+    background-size: cover;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 40px;
+    background-image: url('https://img.freepik.com/free-vector/subtle-white-background-with-diagonal-lines_1017-14763.jpg?t=st');
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px;
+    animation: circleAnimation 2s ease forwards;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.correct {
+    animation: correctAnimation 2s ease forwards;
+}
+
+.incorrect {
+    animation: incorrectAnimation 2s ease forwards;
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes correctAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes incorrectAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+
+/* butti */
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Minimalistic white background color */
+    color: #333; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}

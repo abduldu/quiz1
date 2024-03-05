@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <div class="circle">
+            <p class="text">Results</p>
+        </div>
+        <p>Correct Answers: <span id="correctAnswers"></span></p>
+        <p>Incorrect Answers: <span id="incorrectAnswers"></span></p>
+        <li class="list-inline-item"><a href="index.html" class="button-link">Home</a></li>
+
+    </div>
+
+        
+
+    <script>
+        // Retrieve results from localStorage
+        const correctAnswers = localStorage.getItem('correctAnswers');
+        const incorrectAnswers = localStorage.getItem('incorrectAnswers');
+
+        // Display results on the page
+        document.getElementById('correctAnswers').textContent = correctAnswers;
+        document.getElementById('incorrectAnswers').textContent = incorrectAnswers;
+    </script>
+
+</body>
+</html>
